@@ -101,7 +101,7 @@ const upperName = (name) =>{
     shirts: { colors: ['white', 'red'] },
     socks: { colors: ['beige', 'gray'] },
   };
-  const {pants,shirts} = {...clothes};
+  const {pants,...rest} = clothes
   //Utilizando os dois arrays abaixo, desestruture cada array com spread para clonar todos itens menos o primeiro
   const arr = [1, 2, 3];
   const arr2 = [4, 5, 6];
