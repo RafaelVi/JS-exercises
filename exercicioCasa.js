@@ -36,6 +36,7 @@ const upperName = (name) =>{
   };
   const {name} = company;
   const {products:{shirts:{shirtsColors}},products:{socks:{socksColors}}} = company;
+  const colors = [...shirtsColors,...socksColors];
   
   //Rest & Spread
   //Utilizando um operador clone o objeto c​lothes
