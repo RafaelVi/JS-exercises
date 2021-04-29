@@ -47,7 +47,7 @@ const upperName = (name) =>{
   const clone = {...clothes};
   
   //Novamente utilizando um operador, clone o objeto c​ lothes​ acima e adicione a este clone um objeto ​shoes​ com propriedade​ colors: ['yellow', 'purple'] ​de modo que fique igual aos objetos p​ ants, shirts ​e​ socks
-  
+  const clone2 = {...clothes, shoes: {colors: ['yellow', 'purple']}};
   //Arrays e seus métodos
   //A partir da variável abaixo e utilizando um método de array, retorne a raiz quadrada de todos os valores do array original em um novo array
   var numbers = [4, 9, 16, 25];
@@ -90,8 +90,8 @@ const upperName = (name) =>{
   //Parte B - Hora do Jogo!
   //Passe a expressão abaixo para Arrow Function e então use destructuring para pegar ​colors
   var getShirtsColorsAmount =  (company) => {
-    colors = company.products.shirts.colors;
-    return colors.length;
+    const {products:{shirts:{colors:shirtColors}}} = company;
+    return shirtColors.length;
   };
 
   
